@@ -21,7 +21,7 @@ export const JobFilters: React.FC<JobFiltersProps> = ({ filters, onFiltersChange
   };
 
   const handleJobTypeChange = (value: string) => {
-    onFiltersChange({ ...filters, jobType: value || undefined });
+    onFiltersChange({ ...filters, jobType: value === 'all' ? undefined : value });
   };
 
   const handleSalaryRangeChange = (value: number[]) => {
@@ -55,12 +55,12 @@ export const JobFilters: React.FC<JobFiltersProps> = ({ filters, onFiltersChange
 
         <div>
           <Label htmlFor="jobTypeFilter">Job Type</Label>
-          <Select value={filters.jobType || ''} onValueChange={handleJobTypeChange}>
+          <Select value={filters.jobType || 'all'} onValueChange={handleJobTypeChange}>
             <SelectTrigger>
               <SelectValue placeholder="All job types" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">All job types</SelectItem>
+              <SelectItem value="all">All job types</SelectItem>
               <SelectItem value="Full-time">Full-time</SelectItem>
               <SelectItem value="Part-time">Part-time</SelectItem>
               <SelectItem value="Contract">Contract</SelectItem>
