@@ -14,6 +14,12 @@ This is a modern job board platform where employers can post job opportunities a
 - Post new job opportunities
 - Responsive design for all devices
 
+##screenshots
+![image](https://github.com/user-attachments/assets/48bcdd95-845d-4e13-8166-cb1aa2f6825c)
+![image](https://github.com/user-attachments/assets/23731850-17f9-4a6a-85e4-fc2c2b32ef93)
+
+
+
 ## Tech Stack
 
 This project is built with:
