@@ -1,6 +1,7 @@
 
 # Job Board Platform
 
+the project is deployed on vercel https://job-vista-admin-hub.vercel.app/
 ## Project Overview
 
 This is a modern job board platform where employers can post job opportunities and job seekers can find and apply for positions.
@@ -42,14 +43,6 @@ npm i
 npm run dev
 ```
 
-## Deployment
-
-You can deploy this project to any hosting provider that supports Node.js applications, such as:
-
-- Vercel
-- Netlify
-- AWS Amplify
-- GitHub Pages
 
 ## Project Structure
 
@@ -59,6 +52,4 @@ You can deploy this project to any hosting provider that supports Node.js applic
 - `/src/types`: TypeScript interfaces and types
 - `/src/hooks`: Custom React hooks
 
-## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
